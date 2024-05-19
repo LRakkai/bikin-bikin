@@ -1,0 +1,574 @@
+:root {
+    --first-color: #2385c4;
+    --second-color: #dbcbff;
+    --font-color: white;
+    --hover-color: rgb(225, 225, 225);
+
+    --home-font-size: 9rem;
+    --home-des-font-size: 2rem;
+    --home-image: 14rem;
+
+    --soal-font-size: 6rem;
+    --soal-des-font-size: 1.5rem;
+    --soal-image: 10rem;
+    --soal-des: 1rem;
+
+    --game-image: 14rem;
+
+    
+}
+
+@media (max-width: 1200px)  {
+    .select {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .select-profil {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        margin-top: 6rem;
+        margin-right: 0;
+    }
+
+    .select-img {
+        margin-top: 45rem;
+        position: absolute;
+    }
+
+    .select-text {
+        position: absolute;
+    }
+
+    .select-text {
+        margin: 95rem 5rem 0 8rem;
+    }
+
+
+}
+
+
+
+
+
+@media (max-width: 991px)  {
+    #back,
+    #back-mobile {
+        height: 2.5rem;
+        left: 0.8rem;
+    }
+
+    .home-image {
+        grid-template-columns: repeat(1,1fr);
+        margin-top: -1rem;
+    }
+
+    .home-image-image {
+        margin-top: 3rem;
+    }
+
+
+    .materi-display-grid,
+    .soal-display-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2rem 0 3rem 0;
+    }
+
+    .materi-image-1,
+    .soal-image-1 {
+        margin: 1rem 0 ;
+    }
+
+    .materi-image-image-img {
+        height: 20rem;
+    }
+
+    .materi-image-2-bab1 {
+        margin-left: 3.8rem;
+    }
+
+    .materi-image-2,
+    .soal-image-2 {
+        margin: 0;
+        margin-bottom: 4rem;
+    }
+
+    .info_box {
+        width: 400px
+    }
+
+    .quiz_box {
+        width: 450px;
+    }
+
+    .game-image {
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 8rem;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .select-profil {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 6rem;
+        margin-right: 0;
+    }
+
+    .select-img {
+        margin-top: 60rem;
+        position: absolute;
+    }
+
+
+    .select-text,
+    .introduction-nama,
+    .introduction-ortu,
+    .introduction-kebiasaan-des {
+        font-size: 0.1px;
+    }
+
+    .medsos {
+        display: none;
+    }
+
+} 
+
+
+
+@media (max-width: 500px) {
+
+    .materi-display-grid,
+    .soal-display-grid {
+        margin: 2rem 0 3rem -0.2rem;
+    }
+    
+
+    #back {
+        display: none;
+    }
+
+    #back-mobile {
+        display: block;
+    }
+
+    .game1-button-close {
+        opacity: 1;
+    }
+
+
+    .home {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .materi {
+        display: block;
+        transition: opacity 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+    .soal,
+    .game {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+
+
+    .materi-text-judul,
+    .soal-text-judul,
+    .game-text-judul {
+        font-size: 4rem;
+        padding: -2rem;
+    }
+
+
+    .materi-text-des,
+    .soal-text-des,
+    .game-text-des  {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-top: -0.7rem;
+    }
+
+    .materi-text-des1,
+    .soal-text-des1,
+    .game-text-des1 {
+        margin-top: -1.5rem;
+    }
+
+    .game-image-image-img {
+        height: 12rem;
+    }
+
+
+    .game-image-image-des {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .game-container {
+        width: 20rem;
+        height: 25rem;
+        margin-top: -3rem;
+    }
+
+
+    .game1-timer {
+        margin-left: 2.7rem;
+    }
+
+
+    #trueButton {
+        margin-right: 3rem;
+    }
+
+    .game1-answer {
+        margin-top: -1rem;
+    }
+
+    #question {
+        font-size: 0.8rem;
+    }
+
+    .info_box .info-list .info {
+        font-size: 14px;
+    }
+
+    .quiz_box,
+    .result_box,
+    .info_box {
+        width: 300px;
+    }
+
+    .result_box .complete_text {
+        font-size: 14px;
+    }
+
+    .result_box .score_text span {
+        font-size: 10px;
+    }
+
+    .result_box .buttons button {
+        height: 35px;
+        padding: 0 10px;
+        font-size: 10px;
+    }
+
+    .quiz_box header .title {
+        font-size: 15px;
+    }
+
+    .section .que_text {
+        font-size: 13px;
+    }
+
+    .section .option_list .option {
+        font-size: 11px;
+    }
+
+    footer button {
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .quiz_box header .timer {
+        width: 110px;
+    }
+
+
+
+    .setting {
+        height: 50dvh;
+        width: 20rem;
+    }
+
+    .setting-music-tema-judul,
+    .setting-tema-judul {
+        font-size: 1.1rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+
+    .setting-music-line,
+    .setting-tema-line {
+        width: 9rem;
+        margin-top: -1.8rem;
+        margin-left: 4.9rem;
+    }
+
+    .setting-music-off,
+    .setting-music-on {
+        margin-left: 7.8rem;
+    }
+
+    .setting-team-medsos {
+        margin: 1rem 0.7rem 0 0.7rem;
+    }
+
+
+
+    .select-img {
+        margin-top: 45rem;
+        position: absolute;
+    }
+
+    .select-img img {
+        height: 22rem;
+    }
+
+    .profil {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .navigation{
+        width: 100%;
+        height: 60px;
+        background: #fff;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+        border-radius: 0 0 10px 10px;
+        text-decoration: none;
+        z-index: 10000000000000;
+
+    }
+    .navigation ul{
+        display: flex;
+        width: 350px;
+    }
+    .navigation ul li{
+        position: relative;
+        list-style: none;
+        width: 70px;
+        height: 70px;
+        z-index: 1;
+        margin: 0 1rem 0 1rem;
+    }
+    .navigation ul li a{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+    }
+    .navigation ul li a .icon{
+        position: relative;
+        display: block;
+        line-height: 67px;
+        font-size: 1.7em;
+        text-align: center;
+        transition: 0.5s;
+        color: #3f6e7e;
+    }
+    .navigation ul li.active a .icon{
+        transform: translateY(-32px);
+        color: rgb(242, 242, 242);
+    }
+    .navigation ul li a .text{
+        position: absolute;
+        color: #3f6e7e;
+        font-weight: 700;
+        font-size: 0.75em;
+        letter-spacing: 0.05em;
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    .navigation ul li.active a .text{
+        opacity: 1;
+        transform: translateY(10px);
+    }
+    .indicator{
+        position: absolute;
+        top: -49%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px solid white;
+        transition: 0.5s;
+    }
+
+
+    .tema-1 {
+        background-image: radial-gradient(circle, var(--first-color), var(--second-color));
+    }
+    
+    .tema-2 {
+        background-image: radial-gradient(circle,rgb(165, 165, 246),#173183);
+    }
+    
+    .tema-3 {
+        background-image: radial-gradient(circle, #a3bdc4, #1B2538);
+    }
+
+    .indicator::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -23px;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border-top-right-radius: 20px;
+        box-shadow: 1px -10px 0 0 var(--clr);
+    }
+
+    .indicator::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -23px;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border-top-left-radius: 20px;
+        box-shadow: -1px -10px 0 0 var(--clr);
+    }
+
+
+    .navigation ul li:nth-child(1).active ~ .indicator
+    {
+        transform: translateX(calc(18.5px* 1));
+    }
+    .navigation ul li:nth-child(2).active ~ .indicator
+    {
+        transform: translateX(calc(106px* 1));
+    }
+    .navigation ul li:nth-child(3).active ~ .indicator
+    {
+        transform: translateX(calc(97px* 2));
+    }
+
+    .navigation ul li:nth-child(4).active ~ .indicator
+    {
+        transform: translateX(calc(140.1px* 2));
+    }
+
+
+
+
+    .team-1,
+    .team-2 {
+        display: none;
+    }
+
+
+
+    .materi-image-2-bab1,
+    .soal-image-2-bab1 {
+        margin-left: 0;
+    }
+
+    .materi-image-image-img {
+        height: 15rem;
+        margin-left: -1rem;
+    }
+
+    .materi-image-image-des {
+        margin: 0 5.5rem 0 4.5rem;
+    }
+
+    .materi-image-image-button {
+        margin: 1rem 13.5rem 0 12.5rem;
+    }
+
+    .baba1 {
+        margin-left: 6rem;
+    }
+
+    .baba2 {
+        margin-left: 2rem;
+    }
+
+    .baba3 {
+        margin-left: -2rem;
+    }
+
+
+    .scrollbox-inner-password {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        margin: 6rem 2rem;
+        display: block;
+        transition: opacity 0.5s ease-in-out;
+        opacity: 1;
+    }
+
+    .back-soal-1-logo-close-password {
+        display: none;
+    }
+
+    #setting-mobile-key {
+        display: none;
+    }
+
+
+    .soal-bab-1-isi-click-kunci-jawaban {
+        display: none;
+    }
+
+    .team-group {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 460px) {
+    .materi-display-grid,
+    .soal-display-grid {
+        margin: 2rem 0 3rem -1.2rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .materi-display-grid,
+    .soal-display-grid {
+        margin: 2rem 0 3rem -2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .materi-display-grid,
+    .soal-display-grid {
+        margin: 2rem 0 3rem -3rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .materi-display-grid,
+    .soal-display-grid {
+        margin: 2rem 0 3rem -4rem;
+    }
+
+    .materi-image-image-des {
+        margin: 0 5.5rem 0 4.5rem;
+    }
+
+    .materi-image-image-button {
+        margin: 1rem 13.2rem 0 12.8rem;
+    }
+
+}
+
+@media (max-width: 330px) {
+    .materi-display-grid,
+    .soal-display-grid {
+        margin: 2rem 0 3rem -5rem;
+    }
+}

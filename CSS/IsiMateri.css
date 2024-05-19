@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jersey+25&family=Lemon&family=Noto+Sans+Indic+Siyaq+Numbers&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Protest+Strike&family=Sedgwick+Ave+Display&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jersey+10&family=Jersey+25&family=Lemon&family=Noto+Sans+Indic+Siyaq+Numbers&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Protest+Strike&family=Sedgwick+Ave+Display&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+html {
+    overflow: hidden;
+}
+
+
+:root {
+    --first-color: #2385c4;
+    --second-color: #dbcbff;
+    --font-color: white;
+    --hover-color: rgb(225, 225, 225);
+
+    --home-font-size: 9rem;
+    --home-des-font-size: 2rem;
+    --home-image: 14rem;
+
+    --soal-font-size: 6rem;
+    --soal-des-font-size: 1.5rem;
+    --soal-image: 10rem;
+    --soal-des: 1rem;
+
+    --game-image: 14rem;
+
+    
+}
+
+.materi-bab2-isi-a{
+    display: none;
+}
+.materi-bab1-isi-a,
+.materi-bab1-isi-b,
+.materi-bab2-isi-a,
+.materi-bab2-isi-b,
+.soal-bab1-isi{
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+
+.materi-text-bab1-isi-a {
+    text-align: center;
+    color: var(--font-color);
+}
+
+.materi-text-judul-bab1-isi-a {
+    font-size: var(--soal-font-size);
+    padding: -2rem;
+}
+
+.materi-bab1-isi-a-video-bg {
+    margin-top: 1rem;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.materi-bab1-isi-a-video,
+.materi-bab2-isi-a-video {
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    width: 780px;
+    height: 425px;
+}
+
+.materi-bab-2-a-pop-up {
+    position: absolute;
+    background-color: rgba(255, 108, 108, 0.985);
+    margin: 0 0.4rem;
+    border-radius: 10px;
+    height: 30rem;
+    transform: translateY(100%);
+    transition: 0.3s ease-in-out;
+}
+
+.materi-bab-2-a-pop-up-pencet-1 {
+    padding: 1rem;
+    background-color: #2385c4;
+    text-align: center;
+    margin: -1rem 36rem 0 36rem;
+}
+
+.materi-bab-2-a-pop-up-pencet-2 {
+    padding: 1rem;
+    background-color: #2385c4;
+    text-align: center;
+    margin: -2rem 35rem 0 35rem;
+}
+
+
+
+
+
+
+
+/* =============== SOAL ============= */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height:60%;
+    background: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px 0 20px;
+    z-index: 2;
+    margin: 9rem 12rem 0 12rem;
+    border-radius: 20px;
+    filter: blur(90%);
+    border: 1px solid rgba(0, 0, 0, 1);
+    transform: translateY(150%);
+    transition: 0.6s ease-in-out;
+
+}
+
+
+.soal-bab-1-isi-click {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    margin: 7rem 15rem;
+}
+
+.soal-bab-1-isi-click-all{
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 12rem;
+    height: 12rem;
+    padding-top: 2.5rem;
+    border: 3px solid rgb(208, 208, 208);
+    border-radius: 5px;
+    color: rgb(230, 230, 230);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 5px rgb(61, 61, 61);
+}
+
+.soal-bab-1-isi-click-all:hover {
+    border: 3px solid rgb(190, 190, 190);
+    box-shadow: 0 0 10px rgb(61, 61, 61);
+}
+
+
+.soal-bab-1-isi-click-all i{
+    font-size: 5rem;
+}
+
+.soal-bab-1-isi-click-all p {
+    margin-top: 0.5rem;
+}
+
+.header-soal-1  {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.header-soal-1 h2 {
+    font-size: 22px;
+    color: black;
+    padding-bottom: 15px;
+}
+
+.header-soal-1-logo {
+    right: -1rem;
+    top: -1.2rem;
+    position: absolute;
+    background-color: white;
+    border-radius: 999px;
+    padding: 0.05rem 0.4rem;
+    font-size: 1.5rem;
+    color: #2385C4;
+    border: 1px solid black;
+    cursor: pointer;
+    z-index: 999999999999999;
+}
+
+.scrollbox {
+    overflow: auto;
+    padding-right: 10px;
+    visibility: hidden;
+}
+
+.scrollbox-inner,
+.scrollbox:hover{
+    visibility: visible;
+}
+
+.scrollbox-inner-pertanyaan-tanyaan{
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.scrollbox-inner-pertanyaan-kunci-jawaban{
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+} 
+
+.scrollbox-inner-pertanyaan{
+    color: white;
+    font-size: 18px;
+    margin-top: 0.9rem;
+    background: #00A7FF;
+    padding: 0.5rem 1rem;
+    margin: 1rem 1rem 0 1rem;
+    border-radius: 20px;
+}
+
+.scrollbox-inner-pertanyaan-tanya {
+    font-weight: 400;
+    margin-bottom: 0.3px;
+    font-size: 15px;
+}
+
+
+.scrollbox-inner-kunci-jawaban {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 8.5rem;
+    padding: 0.5rem 0 0.5rem 0.8rem;
+    font-size: 12px;
+    margin-top: 2rem;
+    color: white;
+    border: 2px solid rgba(0, 0, 0, 0.4);;
+    border-radius: 5px;
+    font-weight: 600;
+    font-style: italic;
+    cursor: pointer;
+}
+
+
+
+.scrollbox-inner-password{
+    position: absolute;
+    bottom: 29%;
+    left: 37%;
+    z-index: 999;
+    text-align: center;
+    background:  radial-gradient(circle, #73a4b4, #4D6487);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    color: #fff;
+    padding: 55px 35px 55px;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+
+#password-form input,
+.password-form input {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: 2px solid #4D6487;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    border-radius: 20px;
+    padding: 10px 15px 10px 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+
+.kirim {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid black;
+    background: #E4F5E4;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.back-soal-1-logo-close-password {
+    background:  radial-gradient(circle, #73a4b4, #4D6487);
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.back-soal-1-logo-close-password i {
+color: #4D6487;
+}
+
+
+
+
+@media (max-width: 900px) {
+
+    .materi-bab2-isi-a-video-bg {
+        margin-top: 4rem;
+    }
+    .materi-bab1-isi-a-video,
+    .materi-bab2-isi-a-video {
+        width: 450px;
+        height: 285px;
+    }
+
+    .soal-bab-1-isi-click {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 5rem 3rem 5rem;
+    }
+    .soal-bab-1-isi-click-all{
+        margin-top: 2rem;
+    }
+
+    .sidebar {
+        margin: 9rem 2rem 0 2rem;
+    }
+
+    .header-soal-1 h2 {
+        font-size: 27px;
+        padding-bottom: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .materi-text-judul-bab1-isi-a {
+        font-size: 4rem;
+    }
+
+    .materi-bab1-isi-a-video-bg {
+        margin-top: 6rem;
+    }
+    .materi-bab1-isi-a-video,
+    .materi-bab2-isi-a-video {
+        width: 350px;
+        height: 220px;
+    }
+
+
+    .soal-bab-1-isi-click {
+        margin: 5.5rem 5rem 3rem 5rem;
+    }
+
+    .sidebar {
+        margin: 7rem 2rem 0 2rem;
+    }
+
+    .soal-bab-1-isi-click-all {
+        width: 10rem;
+        height: 10rem;
+        padding-top: 1.3rem;
+    }
+
+
+    .header-soal-1 h2 {
+        font-size: 18px;
+        margin-right: -10rem;
+    }
+
+    .scrollbox-inner p {
+        font-size: 15px;
+        font-weight: 650;
+    }
+    
+    
+
+}

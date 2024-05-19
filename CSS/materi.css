@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jersey+25&family=Lemon&family=Noto+Sans+Indic+Siyaq+Numbers&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Protest+Strike&family=Sedgwick+Ave+Display&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jersey+10&family=Jersey+25&family=Lemon&family=Noto+Sans+Indic+Siyaq+Numbers&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Protest+Strike&family=Sedgwick+Ave+Display&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+
+
+:root {
+    --first-color: #2385c4;
+    --second-color: #dbcbff;
+    --font-color: white;
+    --hover-color: rgb(225, 225, 225);
+
+    --home-font-size: 9rem;
+    --home-des-font-size: 2rem;
+    --home-image: 14rem;
+
+    --soal-font-size: 6rem;
+    --soal-des-font-size: 1.5rem;
+    --soal-image: 10rem;
+    --soal-des: 1rem;
+
+    --game-image: 14rem;
+
+    
+}
+
+
+
+/*  */
+
+.materi-bab1,
+.materi-bab2{
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+
+
+.materi-text-bab1 {
+    text-align: center;
+    color: var(--font-color);
+}
+
+.materi-text-judul-bab1 {
+    font-size: var(--soal-font-size);
+    padding: -2rem;
+}
+
+.materi-text-des1-bab1 {
+    margin-top: -2rem;
+}
+
+.materi-text-des-bab1 {
+    font-size: var(--soal-des-font-size);
+    font-weight: 500;
+    margin-top: -1rem;
+}
+
+
+.materi-image-1-bab1 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 6rem 3rem 0 3rem;
+}
+
+.materi-image-1-bab2 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 6rem 3rem 0 3rem;
+}
+
+
+.materi-image-image-des-hiden-bab1 {
+    display: none;
+}
+
+.materi-image-image-bab-1{
+    text-align: center;
+    align-items: center;
+    color: var(--font-color);
+    transition: .1s;
+}
+
+
+
+.materi-image-image-bab-1:hover {
+    color: var(--hover-color);
+    font-weight: 700;
+}
+
+
+.materi-image-image-img-bab1 {
+    height: 13.5rem;
+    cursor: pointer;
+}
+
+.materi-image-image-img-bab2 {
+    height: 12rem;
+    cursor: pointer;
+}
+
+
+.materi-image-image-img-bab1:hover,
+.materi-image-image-img-bab2:hover {
+    animation: materi 1.5s ease-in-out infinite;
+}
+
+@keyframes materi {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-0.8rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.materi-image-image-des-bab1{
+    font-size: var(--soal-des);
+    font-weight: 600;
+    margin: 0 1rem 0 1rem;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+    .materi-bab1,
+    .materi-bab2 {
+        margin-bottom: 8rem;
+    }
+    .materi-image-1-bab1,
+    .materi-image-1-bab2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .materi-text-judul-bab1 {
+        font-size: 4rem;
+    }
+
+    .materi-text-des1-bab1 {
+        margin-top: -1.7rem;
+    }
+
+    .materi-text-des-bab1 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-top: 0.5rem;
+    }
+
+    .materi-image-1-bab1,
+    .materi-image-1-bab2 {
+        margin-top: 1rem;
+    }
+
+    .materi-image-image-img-bab1,
+    .materi-image-image-img-bab1 {
+        height: 11rem;
+    }
+
+    .materi-image-image-bab-1 {
+        margin-top: 3rem;
+    }
+}
